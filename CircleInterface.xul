@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!--author: Xiaorui Dong 2010 6 19-->
+<window 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    onload="main('svg',500,500,100,5,100,20,1000,500,50,['NETWORKS', 'WALLPOSTS', 'PHOTO', 'OTHERDATA', 'LIKES','BDATE', 'GENDER', 'NAME', 'FRIENDS', 'CONTACTINFO'],['THE ENTIRE INTERNET', 'ALL FACEBOOK USERS', 'NETWORK USERS', 'FRIEND USERS', 'YOU'],['ACCESS','MODIFY','COMMENT','OTHER'])"
+    >
+	<!--Import Js files-->
+	<script src="CircleInterface_Observer.js"/>
+	<script src="CircleInterface_Subject.js"/>
+	<script src="CircleInterface_Main.js"/>
+
+  	<vbox flex="1" style="overflow:auto">
+  		<!--Embedded SVG-->
+  		<hbox>
+  			<svg:svg id="svg" width="1500" height="1000" version="1.1" > </svg:svg>
+ 		</hbox>
+  	</vbox>
+</window>
